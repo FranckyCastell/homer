@@ -1,0 +1,20 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "homer-cli"
+version = "1.2.0"
+description = "Herramienta CLI para automatizar Terraform y Packer."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[tool.setuptools]
+packages = ["libs"]
+py-modules = ["main"]
+
+[project.scripts]
+homer = "main:main"
